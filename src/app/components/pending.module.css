@@ -1,0 +1,9 @@
+.label {
+  display: inline-flex;
+  border-radius: 28px;
+  padding: 4px 14px;
+  width: 96px;
+  height: 28px;
+  background: #ffedd5;
+  color: #c2410c;
+}
