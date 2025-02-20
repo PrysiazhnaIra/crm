@@ -1,18 +1,15 @@
-import ActiveLabel from './components/active-label';
-import NotActiveLabel from './components/not-active-label';
-import Pending from './components/pending';
-import Suspended from './components/suspended';
+import StatusLabel, { Status } from './components/status-label';
 
 export default function Home() {
   return (
     <main>
       <h1 className="text-3xl font-bold underline text-green-500">
-        Hello, Next.js!
+        Hello, Next.js! This is a Home Page
       </h1>
-      <ActiveLabel>Active</ActiveLabel>
-      <NotActiveLabel>NotActive</NotActiveLabel>
-      <Pending>Pending</Pending>
-      <Suspended>Suspended</Suspended>
+      <StatusLabel status={Status.Active}> Active</StatusLabel>
+      <StatusLabel status={Status.NotActive}>Not Active</StatusLabel>
+      <StatusLabel status={Status.Pending}>Pending</StatusLabel>
+      <StatusLabel status={Status.Suspended}>Suspended</StatusLabel>
     </main>
   );
 }
