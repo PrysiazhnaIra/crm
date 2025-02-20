@@ -11,7 +11,7 @@ export interface StatusLabelProps {
   children: React.ReactNode;
   status: Status;
 }
-export default function StatusLabel({ children }: StatusLabelProps) {
+export default function StatusLabel({ children, status }: StatusLabelProps) {
   return (
     <div
       className={`inline-flex items-center py-1 px-3.5 rounded-3xl text-sm font medium ${
