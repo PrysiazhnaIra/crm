@@ -8,6 +8,7 @@ export interface PageProps {}
 
 export default async function Page({}: PageProps) {
   const data = await getSummaryCountries();
+  console.log('My data from request for countries', data);
 
   return (
     <DashboardCard label="Countries of companies">
