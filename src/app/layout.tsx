@@ -2,6 +2,7 @@ import React from 'react';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 import type { Metadata } from 'next';
+import 'tui-calendar/dist/tui-calendar.css';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
