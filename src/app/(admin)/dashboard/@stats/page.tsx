@@ -1,11 +1,11 @@
 import React from 'react';
-import { getSummaryStats } from '@/lib/api';
+import { getSummaryStats, SummaryStats } from '@/lib/api';
 import Link from 'next/link';
 import StatCard, { StatCardType } from '@/app/components/start-card';
 
 export interface PageProps {}
 
-const labelByStat = {
+const labelByStat: Record<keyof SummaryStats, string> = {
   promotions: 'Total promotions',
   categories: 'Total categories',
   newCompanies: 'New companies',
